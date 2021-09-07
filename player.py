@@ -35,10 +35,10 @@ async def play(ctx, url: str):
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([url])
 
-    for file in os.listdir("./"):
-        if file.endswith(".mp3"):
-            os.rename(file, "song.mp3")
-            return voice.play(discord.FFmpegOpusAudio("song.mp3"))
+        for file in os.listdir("./"):
+            if file.endswith(".mp3"):
+                os.rename(file, "song.mp3")
+                return voice.play(discord.FFmpegOpusAudio("song.mp3"))
 
 
 @client.command()
