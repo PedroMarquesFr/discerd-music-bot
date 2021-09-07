@@ -1,1 +1,1 @@
-worker: python player.py 
+worker: python ./source/presentation/player.py 
