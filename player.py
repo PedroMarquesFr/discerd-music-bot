@@ -39,7 +39,7 @@ async def play(ctx, url: str):
         print(file)
         if file.endswith(".mp3"):
             os.rename(file, "song.mp3")
-    voice.play(discord.FFmpegPCMAudio("song.mp3"))
+            return voice.play(discord.FFmpegPCMAudio("song.mp3"))
 
 
 @client.command()
