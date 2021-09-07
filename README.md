@@ -1,2 +1,2 @@
 # discord-music-bot
-ta la
+ta la, mano
